@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "net core有点意思哦";
+}
+
+<div id="mid">
+    <ul id="mid_pic_ul">
+        <li class="mid_pic_li">
+            <a asp-page="Krr">
+                <img class="mid_pic" alt="Krr" src="./image/krr_foot.png"
+                     onmouseover="over(this)" onmouseout="out(this)">
+            </a>
+        </li>
+        <li class="mid_pic_li">
+            <img class="mid_pic" alt="Klee" src="./image/Klee_s.png"
+                 onmouseover="over(this)" onmouseout="out(this)">
+        </li>
+        <li class="mid_pic_li">
+            <img class="mid_pic" alt="Kafka" src="./image/Kafka.png"
+                 onmouseover="over(this)" onmouseout="out(this)">
+        </li>
+    </ul>
+</div>
+
+<footer>
+    <p id="ICP">辽ICP备2023003057号-1</p>
+</footer>
