@@ -11,4 +11,15 @@
     <None Include="wwwroot\css\Krr.css" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\Index.cshtml.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Pages\Krr.cshtml.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
