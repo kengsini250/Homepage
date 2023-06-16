@@ -18,8 +18,6 @@ namespace MyHomepage.Pages
         {
 
         }
-        
-        
-        public UserModel User { get; set; } = default!;
+
     }
 }

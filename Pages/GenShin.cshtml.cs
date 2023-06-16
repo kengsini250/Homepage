@@ -12,12 +12,11 @@ namespace MyHomepage.Pages
             _logger = logger;
         }
 
-        public UserModel User { get; set; } = default!;
-
         public void OnGet()
         {
 
         }
 
+        public UsersModel Users { set; get; }
     }
 }
