@@ -18,20 +18,11 @@ namespace MyHomepage.Pages
 	        text = "TESTSETESTETSETESTETSETEST";
         }
 
-        public UsersModel Users = new();
-        public string _username;
-        public string _password;
+        public UsersModel Users;
         public void OnPost()
         {
-             _username = Request.Query["username"];
-             _password = Request.Query["password"];
-             Users.Username = _username;
-             Users.Password = _password;
+            Users.Username = Request.Query["username"];
+            Users.Password = Request.Query["password"];
         }
-
-
-
-
-
     }
 }
