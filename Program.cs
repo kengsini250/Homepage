@@ -18,6 +18,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+/*
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=User}/{action=Index}/{id?}");
+*/
+
 app.UseAuthorization();
 
 app.MapRazorPages();

@@ -12,11 +12,26 @@ namespace MyHomepage.Pages
             _logger = logger;
         }
 
+        public string text = "TEST";
         public void OnGet()
         {
-
+	        text = "TESTSETESTETSETESTETSETEST";
         }
 
-        public UsersModel Users { set; get; }
+        public UsersModel Users = new();
+        public string _username;
+        public string _password;
+        public void OnPost()
+        {
+             _username = Request.Query["username"];
+             _password = Request.Query["password"];
+             Users.Username = _username;
+             Users.Password = _password;
+        }
+
+
+
+
+
     }
 }

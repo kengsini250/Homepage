@@ -1,6 +1,6 @@
 ﻿@page
-@using MyHomepage.Models
 
+@using MyHomepage.Models
 @model KafkaModel
 
 
@@ -12,6 +12,9 @@
     <a asp-area="" asp-page="Index">return</a>
     <br/>
     <h1>form test</h1>
+    <hr/>
     <p>
+	    @Model._username<br/>
+	    @Model._password<br/>
     </p>
 </div>

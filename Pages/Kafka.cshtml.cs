@@ -13,11 +13,13 @@ namespace MyHomepage.Pages
             _logger = logger;
         }
 
-
+        public string _username;
+        public string _password;
         public void OnGet()
         {
 
         }
+        
 
     }
 }

@@ -1,5 +1,4 @@
 ﻿@page
-@using MyHomepage.Models
 @model GenShinModel
 
 @{
@@ -9,10 +8,16 @@
 <div>
     <a asp-area="" asp-page="Index">return</a>
     <br/>
-    <h1>form test</h1>
+    <h1>form @Model.text</h1>
+    
     <form method="post">
-        <label>Username: <input asp-for="Users.Username"/></label><br/>
-        <label>Password: <input asp-for="Users.Password"/></label><br/>
-        <input type="submit" value="Login" asp-page="Kafka"/>
+        <label>Username: <input name="username" type="text"/></label><br/>
+        <label>Password: <input name="password" type="password"/></label><br/>
+        <input type="submit" value="Login"/>
     </form>
 </div>
+
+<p>
+    @Model._username<br/>
+    @Model._password<br/>
+</p>
