@@ -1,0 +1,17 @@
+﻿@page
+@model KafkaModel
+
+
+@{
+    ViewData["Title"] = "Kafka";
+}
+
+<div>
+    <a asp-area="" asp-page="Index">return</a>
+    <br/>
+    <h1>form test</h1>
+    <p>
+        @Html.DisplayNameFor(model => model.User.Username)
+        @Html.DisplayNameFor(model => model.User.Password)
+    </p>
+</div>

@@ -5,15 +5,13 @@
     ViewData["Title"] = "原神";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>test</title>
-</head>
-<body>
 <div>
-    <a asp-area=""  asp-page="Index">return</a>
+    <a asp-area="" asp-page="Index">return</a>
+    <br/>
+    <h1>form test</h1>
+    <form method="post">
+        <label>Username: <input asp-for="User.Username"/></label><br/>
+        <label>Password: <input asp-for="User.Password"/></label><br/>
+        <input type="submit" value="Login" asp-page="Kafka"/>
+    </form>
 </div>
-</body>
-</html>

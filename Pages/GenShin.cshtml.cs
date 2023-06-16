@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using MyHomepage.Models;
 
 namespace MyHomepage.Pages
 {
@@ -10,11 +11,13 @@ namespace MyHomepage.Pages
         {
             _logger = logger;
         }
-        
+
+        public UserModel User { get; set; } = default!;
+
         public void OnGet()
         {
 
         }
-    }
 
+    }
 }
