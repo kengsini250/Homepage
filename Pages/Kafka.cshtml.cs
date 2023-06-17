@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using MyHomepage.Models;
 
 namespace MyHomepage.Pages
 {
@@ -12,10 +14,13 @@ namespace MyHomepage.Pages
             _logger = logger;
         }
 
-       
-        public void OnGet()
+        [BindProperty] public UsersModel? Users { get; set; }
+        public string? a;      
+        public string? b;      
+        public void OnGet(string _username,string _password)
         {
-
+            a = Users.Username;
+            b = Users.Password;
         }
         
 

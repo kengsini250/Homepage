@@ -24,6 +24,7 @@ public class GenShinModel : PageModel
     public string? a;
     public string? b;
 
+
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
