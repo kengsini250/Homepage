@@ -11,13 +11,11 @@
     <h1>form @Model.text</h1>
     
     <form method="post">
-        <label>Username: <input name="username" type="text"/></label><br/>
-        <label>Password: <input name="password" type="password"/></label><br/>
+        <label>Username: <input asp-for="Users!.Username" name="username" type="text"/></label><br/>
+        <label>Password: <input  asp-for="Users!.Password" name="password" type="password"/></label><br/>
         <input type="submit" value="Login"/>
     </form>
 </div>
-
-<p>
-    @Model.Users.Username<br/>
-    @Model.Users.Password<br/>
-</p>
+<hr/>
+    @Model.a<br/>
+    @Model.b<br/>
