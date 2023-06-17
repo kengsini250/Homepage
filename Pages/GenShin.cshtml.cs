@@ -13,16 +13,16 @@ public class GenShinModel : PageModel
         _logger = logger;
     }
 
-    public string text = "TEST";
+    public string? text = "Output";
 
     public void OnGet()
     {
-        text = "TESTSETESTETSETESTETSETEST";
+        text = "Input";
     }
 
     [BindProperty] public UsersModel? Users { get; set; }
-    public string a;
-    public string b;
+    public string? a;
+    public string? b;
 
     public async Task<IActionResult> OnPostAsync()
     {
