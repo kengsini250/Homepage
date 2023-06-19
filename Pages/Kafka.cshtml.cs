@@ -14,13 +14,8 @@ namespace MyHomepage.Pages
             _logger = logger;
         }
 
-        [BindProperty] public UsersModel? Users { get; set; }
-        public string? a;      
-        public string? b;      
-        public void OnGet(string _username,string _password)
+        public void OnGet()
         {
-            a = Users.Username;
-            b = Users.Password;
         }
         
 

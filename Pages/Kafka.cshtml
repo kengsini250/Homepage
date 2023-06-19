@@ -13,8 +13,8 @@
     <br/>
     <h1>form test</h1>
     <hr/>
-    <p>
-            @Model.a<br/>
-            @Model.b<br/>
-    </p>
+    @for(var i = 0; i < 3; i++)
+    {
+        <p>Line #: @i</p>
+    }
 </div>
